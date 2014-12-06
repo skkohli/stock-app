@@ -1,0 +1,61 @@
+
+<div class = "wrapper">
+    <header class = "main-header">
+      <div class = "heading no-border float-left">
+        Simple Stock Exchange
+      </div>
+      <input type = "search" id = "search"placeholder = "Enter Symbol" class = "float-right input search rounded">
+      <button data-ng-click = "searchSymbol(false)" class = "float-right button search-button">Lookup </button>
+    </header>
+  <div class = "main">
+     <div class = "error" ng-show = "error">
+          {{errorMsg}}
+        </div>
+    <section ng-show = "showdata" class = "main-section float-left">
+      <header class = "sub-header">
+       
+        <span> {{data.name}}</span> 
+      </header>	
+     <article>
+       <div class= "tbl-header">
+       <span class= "float-left">Bid</span>
+       <span class = "float-right">Ask</span>
+	<div style="clear:both;"></div> 
+       </div>   
+       <div class = "tbl-main">
+         <div class="float-left">{{data.bid}}</div>
+	 <div class="float-right">{{data.ask}}</div>
+       </div>
+     </article>
+     <div class = "form-container">
+       <input type = "text" id = "stock-quantity" name = "quantity" class = "input rounded" placeholder = "Quantity">
+        <input type = "button" data-ng-click = "buy()" class ="button" value = "Buy">
+        <input type = "button" data-ng-click = "sell()" data-ng-show = "canSell" class ="button" value = "Sell">
+     </div>
+    </section>
+    <section class = "portfolio float-right ">
+     <table class = "table">
+      <tr>
+        <th>Company</th>
+        <th>Quantity</th>
+        <th>Price Paid</th>
+      <tr data-ng-repeat = "companyData in  stocksData track by $index">
+        <td>
+          {{companyData.name}}
+        </td>
+        <td>
+          {{companyData.quantity}}
+        </td>
+        <td>
+          {{companyData.pricePaid}}
+        </td>
+        <td>
+          <button ng-click = "searchSymbol(companyData.symbol)" class = "button" >view Stock</button>
+        </td>  
+
+      </tr>
+     </table>
+  </section>
+<div style="clear:both;"></div> 
+  </div>
+</div>

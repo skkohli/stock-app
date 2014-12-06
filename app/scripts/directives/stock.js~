@@ -1,0 +1,24 @@
+var app = angular.module('benzingaApp');
+app.directive('stockApp',['$http',function($http){
+  return {
+	        restrict:'E',
+	       	link:function(scope,elem,attrs){
+	       		  var url = "http://data.benzinga.com/stock/F";
+	       		  scope.searchSymbol = function() {
+		        $http({
+		          method: 'JSONp',
+		          url: url
+		        }).success(function(data) {
+		        	//console.log(data);
+		          
+		          		          
+		        });
+		      }
+
+				console.log("link function ran");
+	        },
+			templateUrl:'views/dashboard.html',
+		};
+ 
+  
+}]);

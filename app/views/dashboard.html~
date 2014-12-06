@@ -1,0 +1,63 @@
+<div class = "wrapper">
+
+    <header class = "main-header">
+      <div class = "heading no-border float-left">
+        Simple Stock Exchange
+      </div>
+      <input type = "search" placeholder = "Enter Symbol" class = "float-right input search rounded">
+      <button ng-click = "searchSymbol" class = "float-right button search-button">Lookup </button>
+    </header>
+  <div class = "main">
+    <section class = "main-section float-left">
+      <header class = "sub-header">
+        <span> Apple Inc</span> 
+      </header>	
+     <article>
+       <div class= "tbl-header">
+       <span class= "float-left">Bid</span>
+       <span class = "float-right">Ask</span>
+	<div style="clear:both;"></div> 
+       </div>   
+       <div class = "tbl-main">
+         <div class="float-left"">500.00</div>
+	 <div class="float-right">505.00</div>
+       </div>
+     </article>
+     <div class = "form-container">
+       <input type = "text" name = "quantity" class = "input rounded" placeholder = "Quantity">
+        <input type = "button" class ="button" value = "Buy">
+        <input type = "button" class ="button" value = "Sell">
+     </div>
+    </section>
+    <section class = "portfolio float-right ">
+      <header class = "tbl-header">
+        <span >Company</span>
+        <span >Quantity</span>
+        <span>Price Paid</span>
+      </header>
+      <div class = "company">
+	<div>Ford Motor</div>
+	<div>General Electric</div>
+	<div>Microsoft</div>
+      </div>
+
+      <div class = "company">
+	<div>20</div>
+	<div>10</div>
+        <div>30</div>
+      </div>
+	
+      <div class = "company">
+	<div>20</div>
+	<div>10</div>
+        <div>30</div>
+      </div>
+      <div class = "portfolio-view">
+	<button class = "button">View Stock</button>
+	<button class = "button">View Stock</button>
+	<button class = "button">View Stock</button>
+      </div>
+    </section>
+<div style="clear:both;"></div> 
+  </div>
+</div>

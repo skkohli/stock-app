@@ -1,0 +1,96 @@
+html, body {
+    height:100%;
+}
+.wrapper div{
+  border:1px solid grey;
+}
+.wrapper{
+  padding:1.5%;
+  width:100%;
+  border:2px solid grey;	
+}
+.main{
+  padding:1%;
+  border:2px solid grey;
+
+}
+
+.main-header{
+  padding:5px;
+  height:40px;
+  border:3px solid green;
+}
+.float-left{
+  float:left;
+
+}
+.no-border{
+  border-style:none !important;
+}
+.float-right{
+  float:right;
+}
+.table-header{
+
+}
+.rounded{
+ border: none;
+ border-radius:10px;
+ border:solid 2px #ccc;
+}
+
+.main-header div,button,input{
+  margin-left:30px;
+}
+.main-section, .portfolio {
+  width:44%;
+}.
+.clearfix {
+ clear:both;
+}
+.tbl-header span{
+ margin-left:4%;
+ margin-right:4%;
+}
+
+.stock-content{
+ border:2px solid grey !important;
+}
+.input{
+width:7em;
+}
+.tbl-main{
+
+}
+.tbl-main div {
+	width:50%;
+}
+.tbl-header{
+  border:2px solid grey;
+  margin-top:5%;
+}
+.portfolio{
+  width:55%;
+  margin-bottom:5%;
+
+
+}
+.portfolio div{
+  height:140px;
+  float:left;
+  width:22.5%;
+}
+div.portfolio-view{
+ width:32.5%;
+ font-size: .9em;
+}
+
+.portfolio button{
+  width:75%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.company div{
+  float:none;	
+}

@@ -24,7 +24,7 @@ html, body {
 
 .main-header{
   padding:5px;
-  height:40px;
+  height:2.85714285714286em;
   border:3px solid green;
 }
 .float-left{
@@ -42,16 +42,17 @@ html, body {
 }
 .rounded{
  border: none;
- border-radius:10px;
+ border-radius:0.714285714285714em;
  border:solid 2px #ccc;
 }
 
 .main-header div,button,input{
-  margin-left:30px;
+  margin-left:0.74em;
 }
-.main-section, .portfolio {
-  width:44%;
-}.
+.main-section {
+  width:35%;
+}
+
 .clearfix {
  clear:both;
 }
@@ -64,7 +65,7 @@ html, body {
  border:2px solid grey !important;
 }
 .input{
-width:7em;
+width: 6.5em;
 }
 .tbl-main{
 
@@ -77,16 +78,10 @@ width:7em;
   margin-top:5%;
 }
 .portfolio{
-  width:55%;
+  width:64%;
   margin-bottom:5%;
-
-
 }
-.portfolio>div{
-  height:140px;
-  float:left;
-  width:22.5%;
-}
+
 div.portfolio-view{
  width:32.5%;
  font-size: .9em;
@@ -106,5 +101,10 @@ div.portfolio-view{
   
 }
 .table button {
-  font-size: 0.7em;
+  align:center;
+  font-size: 0.9em;
+}
+.table td{
+ text-align:center; 
+ vertical-align:middle;
 }
